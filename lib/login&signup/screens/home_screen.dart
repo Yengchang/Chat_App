@@ -25,7 +25,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             textAlign: TextAlign.center,
           ),
-          const Text("Yeng chat app home Screen"),
+          const Text("Yeng chat app  hilelel home Screen"),
           MyButton(
               onTab: () async {
                 await AuthServices().signOut();
