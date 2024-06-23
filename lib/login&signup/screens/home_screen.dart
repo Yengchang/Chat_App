@@ -25,6 +25,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             textAlign: TextAlign.center,
           ),
+          const Text("Yeng chat app home Screen"),
           MyButton(
               onTab: () async {
                 await AuthServices().signOut();
@@ -34,7 +35,16 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 );
               },
-              text: "Log Out")
+              text: "Log Out"),
+          MyButton(
+              onTab: () async {
+                Navigator.of(context).pushReplacement(
+                  MaterialPageRoute(
+                    builder: (context) => const LoginScreen(),
+                  ),
+                );
+              },
+              text: "Text button")
         ],
       ),
     );
