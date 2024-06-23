@@ -35,6 +35,7 @@ class _LoginScreenState extends State<LoginScreen> {
     // otherwise show the error message
     if (res == "success") {
       setState(() {
+        
         isLoading = true;
       });
       Navigator.of(context).pushReplacement(
